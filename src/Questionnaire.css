@@ -1,0 +1,81 @@
+.questionnaire-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  .questionnaire-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #e5e5e5;
+  }
+  
+  .questionnaire-description {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #aaaaaa;
+  }
+  
+  .questionnaire-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #e5e5e5;
+  }
+  
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #333;
+    color: #e5e5e5;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .form-submit {
+    text-align: center;
+  }
+  
+  .form-submit button {
+    padding: 15px 30px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .form-submit button:disabled {
+    background-color: #555;
+  }
+  
+  .questionnaire-thank-you {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border: 1px solid #333;
+    border-radius: 5px;
+    color: #e5e5e5;
+  }
+  
