@@ -115,13 +115,8 @@ const YoumingApp = () => {
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8 }}
       >
-        <div className="nav-logo">YOUMING</div>
-        <ul className="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+       <i> <div className="nav-logo">YOUMING</div></i>
+      
       </motion.nav>
 
       {/* Featured Solutions - Netflix-style row */}
@@ -264,61 +259,7 @@ const YoumingApp = () => {
         </div>
       </motion.section>
 
-      {/* Client Testimonials */}
-      <motion.section
-        className="testimonials"
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-        <h2>What Our Clients Say</h2>
-        <div className="testimonial-cards">
-          <motion.div
-            className="testimonial-card"
-            initial={{ x: -100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="quote-mark">"</div>
-            <p>Youming's financial system transformed our school's accounting processes, saving us countless hours.</p>
-            <div className="client-info">
-              <img
-                src="https://randomuser.me/api/portraits/women/45.jpg"
-                alt="Client"
-                className="client-image"
-              />
-              <div>
-                <strong>School Administrator</strong>
-                <span>Nairobi, Kenya</span>
-              </div>
-            </div>
-          </motion.div>
-          <motion.div
-            className="testimonial-card"
-            initial={{ x: 100, opacity: 0 }}
-            whileInView={{ x: 0, opacity: 1 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <div className="quote-mark">"</div>
-            <p>The automated reporting features have given us real-time insights into our financial health.</p>
-            <div className="client-info">
-              <img
-                src="https://randomuser.me/api/portraits/men/32.jpg"
-                alt="Client"
-                className="client-image"
-              />
-              <div>
-                <strong>NGO Director</strong>
-                <span>Kampala, Uganda</span>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      </motion.section>
-
+    
       {/* Call to Action */}
       <motion.section
         className="cta-section"
@@ -354,17 +295,10 @@ const YoumingApp = () => {
           <div className="footer-logo">YOUMING TECHNOLOGIES</div>
           <div className="footer-links">
             <div className="link-group">
-              <h4>Solutions</h4>
-              <ul>
-                <li><a href="#schools">For Schools</a></li>
-              </ul>
+             
             </div>
             <div className="link-group">
-              <h4>Company</h4>
-              <ul>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
+            
             </div>
           </div>
         </div>
