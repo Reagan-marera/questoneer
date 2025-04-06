@@ -1,81 +1,100 @@
+/* General Styles */
 .questionnaire-container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background-color: #1f1f1f;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.questionnaire-thank-you {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.questionnaire-description {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button[type='submit'] {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button[type='submit']:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.add-button {
+  background-color: #0071eb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.remove-button {
+  background-color: #e50914;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+/* Animations */
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  .questionnaire-container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #e5e5e5;
+  to {
+    opacity: 1;
   }
-  
-  .questionnaire-description {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #aaaaaa;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
   }
-  
-  .questionnaire-form {
-    display: flex;
-    flex-direction: column;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  .form-group label {
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: #e5e5e5;
-  }
-  
-  .form-group input,
-  .form-group select,
-  .form-group textarea {
-    width: 100%;
-    padding: 10px;
-    box-sizing: border-box;
-    border: 1px solid #333;
-    border-radius: 5px;
-    background-color: #333;
-    color: #e5e5e5;
-  }
-  
-  .radio-group {
-    display: flex;
-    gap: 10px;
-  }
-  
-  .form-submit {
-    text-align: center;
-  }
-  
-  .form-submit button {
-    padding: 15px 30px;
-    background-color: #e50914;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  .form-submit button:disabled {
-    background-color: #555;
-  }
-  
-  .questionnaire-thank-you {
-    text-align: center;
-    padding: 20px;
-    background-color: #1f1f1f;
-    border: 1px solid #333;
-    border-radius: 5px;
-    color: #e5e5e5;
-  }
-  
+}
